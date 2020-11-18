@@ -35,6 +35,8 @@ export default function LoginPage() {
                         <button>Sign up</button>
                     </Link>
             </form>
+            <h1>Default user: Admin <br />
+                Password:12345</h1>
         </div>
     )
 }

@@ -11,7 +11,7 @@ function App() {
   const [users,setUsers] = useState([
     {
      username:"Admin",
-     password:"1209qwpo",
+     password:"12345",
     }
   ])
   const [currentUser,setCurrentUser] = useState()
