@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
+    font-size:62.5%;
+}
+.login-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:white;
+    width:500px;
+    margin: 10% auto;
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    height:auto;
+}
+.search-bar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.villager-card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(201, 201, 201);
+    width:60%;
+    height:30vh;
+    margin:15px auto;
+}
+.villager-card section {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+}
+.villager-info-card{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hind', sans-serif;
+    background:rgb(238, 232, 194);
+    font-size:15px;
+    border-radius: 25px;
+    width:50%;
+    height:70%;
+    padding:5%;
+    margin:auto;
+}
+.villager-info-card img{
+    display:flex;
+    margin:auto;
+    border-radius:25px;
+    width:250px;
+}
+.villager-info-card h1{
+    text-align: center;
+    width:70%;
+    margin: 15px auto;
+    border-radius:25px;
+    padding:2%;
+}
+.villager-info-card section{
+    width:70%;
+    border-radius:25px;
+    font-size:1.2rem;
+    padding:2%;
+}
