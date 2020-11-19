@@ -1,7 +1,8 @@
 body{
     margin:0;
     background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
-    font-size:62.5%;
+    font-size:80%;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 .login-form{
     display:flex;
@@ -23,16 +24,50 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:auto;
+    margin:20px auto;
+    height:50px;
+}
+#message{
+    resize:none;
+    height:200px;
+    width:90%;
+}
+.villager-results{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-form{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    font-size:1rem;
+    margin:10% auto;
+    background:white;
+    width:500px;
+    height:600px;
+    padding:20px;
+}
+.contact-form input{
+    justify-content: center;
+    align-items: center;
+    margin:10px;
 }
 .villager-card{
     display:flex;
     justify-content: center;
     align-items: center;
-    background: rgb(201, 201, 201);
-    width:60%;
-    height:30vh;
-    margin:15px auto;
+    background: rgb(235, 235, 235);
+    border-radius: 35px;
+    width:250px;
+    height:250px;
+    margin:20px ;
+}
+.villager-card-img{
+    width:100%;
+    height:auto;
 }
 .villager-card section {
     display:flex;
@@ -47,7 +82,7 @@ body{
     flex-direction: column;
     font-family: 'Hind', sans-serif;
     background:rgb(238, 232, 194);
-    font-size:15px;
+    font-size:1.5rem;
     border-radius: 25px;
     width:50%;
     height:70%;
@@ -70,6 +105,56 @@ body{
 .villager-info-card section{
     width:70%;
     border-radius:25px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     padding:2%;
+}
+.villager-bio{
+    margin-top:5%;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    background: #216fc7;
+    color:rgb(255, 255, 255);
+    box-shadow:5px 5px 6px black;
+    border-radius:15px;
+    width:50px;
+    padding:12px;
+}
+.nav-container{
+   box-shadow: 0px 15px 0px #47c1e6;
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height:10vh;
+    background:#8ce2f7
+}
+.nav-links{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #216fc7;
+    color:rgb(255, 255, 255);
+    box-shadow:5px 5px 6px black;
+    border-radius:15px;
+    width:120px;
+    height:50px;
+    padding:15px;
+    font-size:1.2rem;
+}
+.links{
+    text-decoration: none;
+    color:black;
+    font-size:1.2rem;
+}
+.back-button-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

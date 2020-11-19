@@ -12,9 +12,9 @@ export default function Villager({villager}) {
         
         <div className="villager-card">
             <section>
-            <Link to={`/${characterID}/info`}>
                 <h1>{villagerName}</h1>
-                <img src={icon} alt="icon"/>
+                <Link className="links" to={`/${characterID}/info`}>
+                <img  className="villager-card-img"src={icon} alt="icon"/>
                 </Link>
             </section>
         </div>

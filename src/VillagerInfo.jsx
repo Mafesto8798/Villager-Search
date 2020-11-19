@@ -1,9 +1,11 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import {useParams,Link} from 'react-router-dom'
+import {FavoritesContext} from './FavoritesContext'
 import axios from 'axios'
 
 
 export default function VillagerInfo() {
+    const [favs,setFavs] = useContext(FavoritesContext)
     const {villagerID} = useParams()
     const [villagerInfo,setVillagerInfo] = useState()
     const [name,setName] = useState()
@@ -13,6 +15,9 @@ export default function VillagerInfo() {
     const [bubbleClr,setBubbleClr] = useState('')
     const [textClr,setTextClr] = useState('')
     const [hobby,setHobby] = useState('')
+    const [catchPhrase,setCatchPhrase] = useState('')
+    const [personality,setPersonality] = useState('')
+    const [birthday,setBirthday] = useState('')
     const [currentPageUrl,setCurrentPageUrl] = useState(`http://acnhapi.com/v1a/villagers/${villagerID}`)
 
 useEffect(() => {
@@ -25,6 +30,9 @@ useEffect(() => {
         setBubbleClr(res.data["bubble-color"])
         setTextClr(res.data["text-color"])
         setHobby(res.data.hobby)
+        setCatchPhrase(res.data["catch-phrase"])
+        setPersonality(res.data.personality)
+        setBirthday(res.data["birthday-string"])
     })
 },[currentPageUrl])
 
@@ -37,17 +45,24 @@ console.log(villagerInfo)
 
     return (
         <>
-        <Link to="/home">
-        <button>Back</button>
+        <Link className="links" to="/home">
+        <div className="button">Back</div>
         </Link>
         <div className="villager-info-card">
-            <div>
+            <div className="portrait">
                 <img src={image} alt="portrait"/>
-                <h1 style={villagerStyles}>{name} the {species}</h1>
             </div>
-            <section style={villagerStyles}>
+            <section className="villager-bio"style={villagerStyles}>
+                <div>
+                <h1 style={{textalign:"center"}}>{name} the {species}</h1>
+                <p>Birthday: {birthday}</p>
                 <h3>Hobby: {hobby} </h3>
-                <h3  id="saying">Saying: {saying}</h3>
+                <h3  id="saying">Saying:  {saying}</h3>
+                </div>
+                <div>
+                    <h3>Catch-phrase:  "{catchPhrase}"</h3>
+                    <h3>Personality:  {personality}</h3>
+                </div>
             </section>
         </div>
         </>
