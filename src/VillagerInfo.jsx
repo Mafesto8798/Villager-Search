@@ -1,11 +1,9 @@
 import React,{useState,useEffect,useContext} from 'react'
 import {useParams,Link} from 'react-router-dom'
-import {FavoritesContext} from './FavoritesContext'
 import axios from 'axios'
 
 
 export default function VillagerInfo() {
-    const [favs,setFavs] = useContext(FavoritesContext)
     const {villagerID} = useParams()
     const [villagerInfo,setVillagerInfo] = useState()
     const [name,setName] = useState()
@@ -46,7 +44,7 @@ console.log(villagerInfo)
     return (
         <>
         <Link className="links" to="/home">
-        <div className="button">Back</div>
+        <div className="back-button">Back</div>
         </Link>
         <div className="villager-info-card">
             <div className="portrait">

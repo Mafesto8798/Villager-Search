@@ -8,9 +8,6 @@ export default function Nav() {
                 <Link className="nav-links" to="/home">
                 <h1>Home</h1>
                 </Link>
-                <Link className="nav-links" to="/favs">
-                <h1>Favs</h1>
-                </Link>
                 <Link className="nav-links" to="/contact">
                 <h1>Contact</h1>
                 </Link>

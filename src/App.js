@@ -5,10 +5,8 @@ import CreateAccount from './CreateAccount'
 import Home from './Home'
 import Contact from './Contact'
 import Nav from './Nav'
-import Favs from './Favs'
 import VillagerInfo from './VillagerInfo'
 import {UserContext} from './UserContext'
-import {FavoritesContext} from './FavoritesContext'
 import {LoggedInContext} from './LoggedInContext'
 
 function App() {
@@ -36,10 +34,7 @@ function App() {
     <Route path="/home" component={Home} />
     </LoggedInContext.Provider>
     </UserContext.Provider>
-    <FavoritesContext.Provider value={[favs,setFavs]}>
     <Route path="/:villagerID/info"  component={VillagerInfo} />
-    <Route path="/favs"  component={Favs} />
-    </FavoritesContext.Provider>
     <Route path="/contact" component={Contact} />
     </Router>
   )

@@ -24,16 +24,18 @@ export default function LoginPage() {
 
     return (
         <div className="login-form">
-            <div className="logo">
-                <img src="https://animal-crossing.com/assets/img/home/logo.png" alt="logo"/>
+            <div>
+                <img className="logo" src="https://animal-crossing.com/assets/img/home/logo.png" alt="logo"/>
             </div>
             <form onSubmit={handleSubmit}>
                 <input ref={userRef} type="text" placeholder="Username"/>
                 <input ref={passwordRef} type="password" placeholder="Password"/>
-                    <button type="submit">Login</button>
+                <div className="btn-container">
+                    <button type="submit" className="button">Login</button>
                     <Link to="/create-account">
-                        <button>Sign up</button>
+                        <button className="button">Sign up</button>
                     </Link>
+                </div>
             </form>
             <h1>Default user: Admin <br />
                 Password:12345</h1>
