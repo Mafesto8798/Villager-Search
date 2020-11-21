@@ -14,7 +14,7 @@ useEffect(() => {
     setVillagers(res.data.map(villager => villager))
     })
 
-},[currentPageUrl])
+},[])
 
 function updateSearch(e){
     setSearchTerm(e.target.value)
