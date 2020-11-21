@@ -16,7 +16,7 @@ export default function VillagerInfo() {
     const [catchPhrase,setCatchPhrase] = useState('')
     const [personality,setPersonality] = useState('')
     const [birthday,setBirthday] = useState('')
-    const [currentPageUrl,setCurrentPageUrl] = useState(`http://acnhapi.com/v1a/villagers/${villagerID}`)
+    const [currentPageUrl,setCurrentPageUrl] = useState(`https://acnhapi.com/v1a/villagers/${villagerID}`)
 
 useEffect(() => {
     axios.get(currentPageUrl).then(res => {
