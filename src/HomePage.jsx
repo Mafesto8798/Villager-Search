@@ -3,7 +3,7 @@ import axios from 'axios'
 import Villagers from './Villagers'
 
 export default function HomePage() {
-    const [currentPageUrl,setCurrentPageUrl] = useState("http://acnhapi.com/v1a/villagers/");
+    const [currentPageUrl,setCurrentPageUrl] = useState("https://acnhapi.com/v1a/villagers/");
     const [villagers,setVillagers] = useState([])
     const [searchTerm,setSearchTerm] = useState('')
 
@@ -14,7 +14,7 @@ useEffect(() => {
     setVillagers(res.data.map(villager => villager))
     })
 
-},[])
+},[currentPageUrl])
 
 function updateSearch(e){
     setSearchTerm(e.target.value)
