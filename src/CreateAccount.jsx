@@ -33,17 +33,17 @@ export default function CreateAccount() {
 
 
     return (
-        <div>
-            <h1>Create an account</h1>
+        <div className="createAccount">
             <form onSubmit={handleSubmit}>
+            <h1>Create an account</h1>
                 <input ref={userRef} type="text" placeholder="Username"/>
                 <input ref={passwordRef} type="password" placeholder="Password"/>
                 <input ref={passwordCheckRef} type="password" placeholder="Repeat Password"/>
                 <section>
-                    <Link to="/">
-                     <button>Return to login</button>
+                    <Link className="links" to="/">
+                     <button className="button">Return to login</button>
                      </Link>
-                     <button type="submit">Create Account</button>
+                     <button className="button" type="submit">Create Account</button>
                 </section>
             </form>
         </div>

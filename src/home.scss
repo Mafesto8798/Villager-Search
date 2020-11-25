@@ -1,0 +1,37 @@
+.search-bar{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top:100px;
+    left:50%;
+    right:50%;
+}
+.villager-results{
+    margin-top:275px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.villager-card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(235, 235, 235);
+    border-radius: 35px;
+    width:250px;
+    height:250px;
+    margin:20px ;
+    section {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction:column;
+    }
+    .villager-card-img{
+        width:100%;
+    }
+}
+

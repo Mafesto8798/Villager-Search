@@ -1,0 +1,353 @@
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 50px;
+  -webkit-box-shadow: -3px 10px 10px black;
+          box-shadow: -3px 10px 10px black;
+  padding: 30px;
+  width: 500px;
+  margin: 250px auto;
+}
+
+.login-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form form input {
+  margin: 10px;
+  width: 200px;
+  height: 25px;
+  font-family: arial black;
+}
+
+.login-form form .btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: auto;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 15px 0px #47c1e6;
+          box-shadow: 0px 15px 0px #47c1e6;
+  background: #8ce2f7;
+}
+
+.nav-container nav {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 15vh;
+}
+
+.nav-container nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background: #216fc7;
+  color: white;
+  -webkit-box-shadow: -3px 5px 8px black;
+          box-shadow: -3px 5px 8px black;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.nav-container nav .nav-links:hover {
+  background: #1a62b4;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  margin: 10% auto;
+  background: white;
+  border-radius: 50px;
+  -webkit-box-shadow: -3px 10px 10px black;
+          box-shadow: -3px 10px 10px black;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+}
+
+.contact-form #message {
+  resize: none;
+  height: 200px;
+  width: 90%;
+}
+
+.contact-form input {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.villager-info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Hind', sans-serif;
+  background: #eee8c2;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  width: 500px;
+  height: 70%;
+  padding: 3%;
+  margin: 250px auto;
+}
+
+.villager-info-card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  border-radius: 25px;
+  width: 350px;
+}
+
+.villager-info-card h1 {
+  text-align: center;
+  width: 70%;
+  margin: 15px auto;
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.villager-info-card section {
+  width: 90%;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 2%;
+}
+
+.villager-info-card .villager-bio {
+  margin-top: 5%;
+}
+
+.back-button {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #216fc7;
+  margin-top: -50px;
+  color: white;
+  -webkit-box-shadow: -5px 3px 5px black;
+          box-shadow: -5px 3px 5px black;
+  border-radius: 15px;
+  width: 50px;
+  padding: 12px;
+}
+
+.createAccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 300px auto;
+}
+
+.createAccount form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 50px;
+  -webkit-box-shadow: -3px 10px 10px black;
+          box-shadow: -3px 10px 10px black;
+  height: 400px;
+  width: 400px;
+}
+
+.createAccount form section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
+  font-size: 80%;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #216fc7;
+  color: white;
+  margin: 10px;
+  -webkit-box-shadow: -3px 3px 6px black;
+          box-shadow: -3px 3px 6px black;
+  border-radius: 15px;
+  width: 80px;
+  height: 45px;
+  padding: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #1a62b4;
+}
+
+.links {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .login-form {
+    width: 55%;
+    font-size: 0.7rem;
+  }
+  .logo {
+    margin: 25px;
+    width: 200px;
+  }
+  .nav-links {
+    width: 50px;
+    height: 25px;
+    margin: 15px 0px;
+    font-size: 0.8rem;
+  }
+  .villager-info-card {
+    font-size: 1rem;
+    width: 75%;
+    height: 100%;
+  }
+  .villager-info-card img {
+    width: 200px;
+  }
+  .villager-info-card h1 {
+    width: 50%;
+  }
+  .villager-info-card section {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

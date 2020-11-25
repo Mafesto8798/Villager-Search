@@ -17,14 +17,13 @@ function App() {
     }
   ])
   const [currentUser,setCurrentUser] = useState()
-  const [favs,setFavs] = useState([])
 
   return (
     <Router>
+    <Nav />
     <UserContext.Provider value={[users,setUsers]}>
     <Route path="/create-account" component={CreateAccount} />
     <LoggedInContext.Provider value={[currentUser,setCurrentUser]}>
-    <Nav />
     <Route path="/" exact component={LoginPage} />
     {currentUser && currentUser.username  && (
       <>

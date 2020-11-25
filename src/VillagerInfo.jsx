@@ -43,10 +43,10 @@ console.log(villagerInfo)
 
     return (
         <>
-        <Link className="links" to="/home">
-        <div className="back-button">Back</div>
-        </Link>
         <div className="villager-info-card">
+            <Link className="links" to="/home">
+            <div className="back-button">Back</div>
+            </Link>
             <div className="portrait">
                 <img src={image} alt="portrait"/>
             </div>

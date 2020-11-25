@@ -1,0 +1,66 @@
+@import './login';
+@import './nav';
+@import './contact';
+@import './villagerInfo';
+@import './signUp';
+
+body{
+    margin:0;
+    background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
+    font-size:80%;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:#216fc7;
+    color:white;
+    margin:10px;
+    box-shadow: -3px 3px 6px black;
+    border-radius:15px;
+    width:80px;
+    height:45px;
+    padding:5px;
+}
+.button:hover{
+    cursor: pointer;
+    background:#1a62b4;
+}
+.links{
+    text-decoration: none;
+}
+
+@media (max-width:700px){
+    .login-form{
+        width:55%;
+        font-size:0.7rem;
+    }
+    .logo{
+        margin:25px;
+        width:200px;
+    }
+    .nav-links{
+        width:50px;
+        height:25px;
+        margin:15px 0px;
+        font-size:0.8rem;
+    }
+    .villager-info-card{
+        font-size:1rem;
+        width:75%;
+        height:100%;
+    }
+    .villager-info-card img{
+        width:200px;
+    }
+    .villager-info-card h1{
+        width:50%;
+    }
+    .villager-info-card section{
+        width:90%;
+        font-size: 1rem;
+    }
+}
+
