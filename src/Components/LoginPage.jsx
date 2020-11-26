@@ -1,7 +1,7 @@
 import React,{useRef, useContext} from 'react'
-import {UserContext} from './UserContext'
+import {UserContext} from '../UserContext'
 import {Link} from 'react-router-dom'
-import { LoggedInContext } from './LoggedInContext'
+import { LoggedInContext } from '../LoggedInContext'
 
 export default function LoginPage() {
     const [users,setUsers] = useContext(UserContext)

@@ -73,7 +73,7 @@
 
 @media (max-width: 700px) {
   .login-form {
-    margin-top: 165px;
+    margin-top: 200px;
     width: 65%;
     font-size: 0.7rem;
   }
@@ -158,12 +158,12 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 100%;
-    min-height: 20vh;
+    min-height: 14vh;
   }
   .nav-container nav .nav-links {
-    font-size: 0.8rem;
-    width: 75px;
-    height: 30px;
+    font-size: 0.7rem;
+    width: 50px;
+    height: 20px;
   }
 }
 
@@ -182,23 +182,45 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1rem;
-  margin: 10% auto;
+  margin: 250px auto;
   background: white;
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
   width: 500px;
-  height: 600px;
+  height: 500px;
   padding: 20px;
 }
 
-.contact-form #message {
-  resize: none;
-  height: 200px;
-  width: 90%;
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.contact-form input {
+.contact-form form #message {
+  font-family: arial black;
+  font-size: 1.2rem;
+  border: black solid 2px;
+  resize: none;
+  height: 200px;
+  width: 400px;
+}
+
+.contact-form form input {
+  font-size: 1rem;
+  border: black solid 2px;
+  font-family: arial black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -206,6 +228,37 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .contact-form {
+    margin-top: 190px;
+    width: 80%;
+    height: 500px;
+  }
+  .contact-form form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: auto;
+  }
+  .contact-form form #message {
+    font-size: 1rem;
+    height: 200px;
+    width: 100%;
+  }
+  .contact-form form input {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .villager-info-card {
@@ -382,7 +435,7 @@
 @media (max-width: 600px) {
   .createAccount {
     width: 85%;
-    margin: 180px auto;
+    margin: 200px auto;
   }
   .createAccount h1 {
     font-size: 1.2rem;
