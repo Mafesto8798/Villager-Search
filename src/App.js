@@ -1,13 +1,13 @@
 import {BrowserRouter as Router,Route, Redirect} from 'react-router-dom'
 import React,{useState} from 'react'
-import LoginPage from './LoginPage'
-import CreateAccount from './CreateAccount'
-import Home from './Home'
+import LoginPage from './Components/LoginPage'
+import CreateAccount from './Components/CreateAccount'
+import Home from './Components/Home'
 import Contact from './Components/Contact'
 import Nav from './Components/Nav'
-import VillagerInfo from './VillagerInfo'
-import {UserContext} from './UserContext'
-import {LoggedInContext} from './LoggedInContext'
+import VillagerInfo from './Components/VillagerInfo'
+import {UserContext} from './Components/UserContext'
+import {LoggedInContext} from './Components/LoggedInContext'
 
 function App() {
   const [users,setUsers] = useState([
