@@ -17,7 +17,7 @@
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
   padding: 30px;
-  width: 500px;
+  width: 450px;
   margin: 250px auto;
 }
 
@@ -38,10 +38,12 @@
 }
 
 .login-form form input {
+  font-size: 1.2rem;
   margin: 10px;
-  width: 200px;
-  height: 25px;
+  width: 300px;
+  height: 40px;
   font-family: arial black;
+  border: solid black 2px;
 }
 
 .login-form form .btn-container {
@@ -69,6 +71,22 @@
   height: auto;
 }
 
+@media (max-width: 700px) {
+  .login-form {
+    margin-top: 165px;
+    width: 65%;
+    font-size: 0.7rem;
+  }
+  .login-form form input {
+    width: 200px;
+    font-size: 1rem;
+  }
+  .login-form .logo {
+    margin: 25px;
+    width: 200px;
+  }
+}
+
 .nav-container {
   position: fixed;
   width: 100%;
@@ -88,7 +106,7 @@
 }
 
 .nav-container nav {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +142,29 @@
 
 .nav-container nav .nav-links:hover {
   background: #1a62b4;
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .nav-container nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    min-height: 20vh;
+  }
+  .nav-container nav .nav-links {
+    font-size: 0.8rem;
+    width: 75px;
+    height: 30px;
+  }
 }
 
 .contact-form {
@@ -231,16 +272,38 @@
       -ms-flex-align: center;
           align-items: center;
   background: #216fc7;
-  margin-top: -50px;
   color: white;
   -webkit-box-shadow: -5px 3px 5px black;
           box-shadow: -5px 3px 5px black;
   border-radius: 15px;
   width: 50px;
-  padding: 12px;
+  padding: 10px;
+}
+
+@media (max-width: 750px) {
+  .villager-info-card {
+    font-size: 1rem;
+    width: 80%;
+    height: 100%;
+    margin-top: 200px;
+  }
+  .villager-info-card .back-button {
+    margin-top: 10px;
+  }
+  .villager-info-card section {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .villager-info-card h1 {
+    width: 50%;
+  }
+  .villager-info-card img {
+    width: 200px;
+  }
 }
 
 .createAccount {
+  font-family: arial black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,13 +316,22 @@
   margin: 300px auto;
 }
 
+.createAccount h1 {
+  background: #ad7a40;
+  color: gold;
+  padding: 15px;
+  border-radius: 25px;
+  border: solid black 2px;
+}
+
 .createAccount form {
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -271,14 +343,58 @@
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 500px;
+}
+
+.createAccount form div {
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.createAccount form div input {
+  border: black solid 2px;
+  margin: 10px auto;
+  font-family: arial black;
+  font-size: 1.2rem;
+  height: 40px;
+  width: 300px;
 }
 
 .createAccount form section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .createAccount {
+    width: 85%;
+    margin: 180px auto;
+  }
+  .createAccount h1 {
+    font-size: 1.2rem;
+  }
+  .createAccount form {
+    width: 300px;
+  }
+  .createAccount form div input {
+    width: 200px;
+    height: 35px;
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -317,37 +433,5 @@ body {
 
 .links {
   text-decoration: none;
-}
-
-@media (max-width: 700px) {
-  .login-form {
-    width: 55%;
-    font-size: 0.7rem;
-  }
-  .logo {
-    margin: 25px;
-    width: 200px;
-  }
-  .nav-links {
-    width: 50px;
-    height: 25px;
-    margin: 15px 0px;
-    font-size: 0.8rem;
-  }
-  .villager-info-card {
-    font-size: 1rem;
-    width: 75%;
-    height: 100%;
-  }
-  .villager-info-card img {
-    width: 200px;
-  }
-  .villager-info-card h1 {
-    width: 50%;
-  }
-  .villager-info-card section {
-    width: 90%;
-    font-size: 1rem;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

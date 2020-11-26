@@ -10,9 +10,14 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  top: 100px;
+  top: 150px;
   left: 50%;
   right: 50%;
+}
+
+.search-bar input {
+  margin: 5px;
+  height: 30px;
 }
 
 .villager-results {
@@ -64,5 +69,14 @@
 
 .villager-card .villager-card-img {
   width: 100%;
+}
+
+@media (max-width: 750px) {
+  .search-bar {
+    top: 200px;
+  }
+  .search-bar input {
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,21 +1,64 @@
 .createAccount{
+    font-family:arial black;
     display:flex;
     justify-content: center;
     align-items: center;
     margin:300px auto;
+    h1{
+        background:#ad7a40;
+        color:gold;
+        padding:15px;
+        border-radius:25px;
+        border:solid black 2px;
+    }
     form{
+        font-size:1rem;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         background:white;
         border-radius:50px;
         box-shadow:-3px 10px 10px black;
-        height:400px;
-        width:400px;
+        height:450px;
+        width:500px;
+        div{
+            margin:25px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            input{
+                border:black solid 2px;
+                margin:10px auto;
+                font-family:arial black;
+                font-size:1.2rem;
+                height:40px;
+                width:300px;
+            }
+        }
         section{
             display:flex;
         }
         
+    }
+}
+@media (max-width:600px){
+    .createAccount{
+        width:85%;
+            margin:180px auto;
+            h1{
+                font-size:1.2rem;
+            }
+        form{
+            width:300px;
+            div{
+            input{
+                width:200px;
+                height:35px;
+                font-size:1rem;
+                }
+            }
+        }
     }
 }

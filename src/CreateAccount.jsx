@@ -36,9 +36,11 @@ export default function CreateAccount() {
         <div className="createAccount">
             <form onSubmit={handleSubmit}>
             <h1>Create an account</h1>
+            <div>
                 <input ref={userRef} type="text" placeholder="Username"/>
                 <input ref={passwordRef} type="password" placeholder="Password"/>
                 <input ref={passwordCheckRef} type="password" placeholder="Repeat Password"/>
+            </div>
                 <section>
                     <Link className="links" to="/">
                      <button className="button">Return to login</button>
