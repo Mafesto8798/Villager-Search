@@ -4,16 +4,16 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    top:150px;
+    top:100px;
     left:50%;
     right:50%;
     input{
         margin:5px;
-        height:30px;
+        height:25px;
     }
 }
 .villager-results{
-    margin-top:275px;
+    margin-top:215px;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -38,12 +38,22 @@
         width:100%;
     }
 }
-
-@media (max-width:750px){
-    .search-bar{
-        top:200px;
+@media (max-width:1200px){
+    .searchbar{
+        top:60px;
         input{
             height:30px;
+        }
+    }
+}
+@media (max-width:600px){
+    .search-bar{
+        display:flex;
+        top:80px;
+        left:50%;
+        right:50%;
+        input{
+            height:15px;
         }
     }
 }

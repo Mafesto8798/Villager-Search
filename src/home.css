@@ -10,18 +10,18 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  top: 150px;
+  top: 100px;
   left: 50%;
   right: 50%;
 }
 
 .search-bar input {
   margin: 5px;
-  height: 30px;
+  height: 25px;
 }
 
 .villager-results {
-  margin-top: 275px;
+  margin-top: 215px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,12 +71,26 @@
   width: 100%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
+  .searchbar {
+    top: 60px;
+  }
+  .searchbar input {
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
   .search-bar {
-    top: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 80px;
+    left: 50%;
+    right: 50%;
   }
   .search-bar input {
-    height: 30px;
+    height: 15px;
   }
 }
 /*# sourceMappingURL=home.css.map */
