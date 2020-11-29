@@ -12,7 +12,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
+  background: #8f5f29;
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
@@ -38,6 +38,7 @@
 }
 
 .login-form form input {
+  background: #e6e796;
   font-size: 1.2rem;
   margin: 10px;
   width: 300px;
@@ -232,6 +233,7 @@
 
 .nav-container nav .nav-links:hover {
   background: #1a62b4;
+  color: gold;
 }
 
 @media (max-width: 1200px) {
@@ -323,7 +325,7 @@
           flex-direction: column;
   font-size: 1rem;
   margin: 250px auto;
-  background: white;
+  background: #8f5f29;
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
@@ -348,7 +350,12 @@
           flex-direction: column;
 }
 
+.contact-form form h1 {
+  color: gold;
+}
+
 .contact-form form #message {
+  background: #e6e796;
   font-family: arial black;
   font-size: 1.2rem;
   border: black solid 2px;
@@ -358,6 +365,7 @@
 }
 
 .contact-form form input {
+  background: #e6e796;
   font-size: 1rem;
   border: black solid 2px;
   font-family: arial black;
@@ -511,11 +519,7 @@
 }
 
 .createAccount h1 {
-  background: #ad7a40;
   color: gold;
-  padding: 15px;
-  border-radius: 25px;
-  border: solid black 2px;
 }
 
 .createAccount form {
@@ -533,7 +537,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
+  background: #8f5f29;
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
@@ -559,6 +563,7 @@
 }
 
 .createAccount form div input {
+  background: #e6e796;
   border: black solid 2px;
   margin: 10px auto;
   font-family: arial black;
@@ -623,6 +628,7 @@ body {
 .button:hover {
   cursor: pointer;
   background: #1a62b4;
+  color: gold;
 }
 
 .links {

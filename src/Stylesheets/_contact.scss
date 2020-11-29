@@ -5,18 +5,22 @@
     flex-direction:column;
     font-size:1rem;
     margin:250px auto;
-    background:white;
+    background:#8f5f29;
     border-radius:50px;
     box-shadow:-3px 10px 10px black;
     width:500px;
     height:500px;
     padding:20px;
     form{
+        h1{
+            color:gold;
+        }
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     #message{
+        background:rgb(230, 231, 150);
         font-family:arial black;
         font-size:1.2rem;
         border:black solid 2px;
@@ -25,6 +29,7 @@
         width:400px;
     }
     input{
+        background:rgb(230, 231, 150);
         font-size:1rem;
         border:black solid 2px;
         font-family:arial black;

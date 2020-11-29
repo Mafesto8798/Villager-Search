@@ -5,11 +5,7 @@
     align-items: center;
     margin:300px auto;
     h1{
-        background:#ad7a40;
         color:gold;
-        padding:15px;
-        border-radius:25px;
-        border:solid black 2px;
     }
     form{
         font-size:1rem;
@@ -17,7 +13,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background:white;
+        background:#8f5f29;
         border-radius:50px;
         box-shadow:-3px 10px 10px black;
         height:450px;
@@ -29,6 +25,7 @@
             align-items: center;
             flex-direction: column;
             input{
+                background:rgb(230, 231, 150);
                 border:black solid 2px;
                 margin:10px auto;
                 font-family:arial black;
