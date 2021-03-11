@@ -10,14 +10,19 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  top: 100px;
+  top: 75px;
   left: 50%;
   right: 50%;
 }
 
 .search-bar input {
-  margin: 5px;
+  font-family: 'Quicksand', sans-serif;
+  background: #e6e796;
+  margin: 10px;
+  padding: 15px;
   height: 25px;
+  font-size: 1.1rem;
+  border-radius: 10px;
 }
 
 .villager-results {
@@ -73,10 +78,32 @@
 
 @media (max-width: 1200px) {
   .searchbar {
-    top: 60px;
+    top: 50px;
   }
   .searchbar input {
     height: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50px;
+    left: 20%;
+    right: 70%;
+  }
+  .search-bar input {
+    height: 15px;
+  }
+  .villager-card {
+    width: 150px;
+    height: 150px;
+  }
+  .villager-card .villager-card-img {
+    height: auto;
+    width: 75px;
   }
 }
 
@@ -85,12 +112,22 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 80px;
-    left: 50%;
-    right: 50%;
+    top: 50px;
+    left: 60%;
+    right: 30%;
   }
   .search-bar input {
-    height: 15px;
+    font-size: 0.9rem;
+    height: 10px;
+  }
+  .villager-card {
+    width: 130px;
+    height: 130px;
+    margin: 15px;
+  }
+  .villager-card .villager-card-img {
+    height: auto;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=home.css.map */

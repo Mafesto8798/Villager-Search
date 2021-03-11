@@ -18,9 +18,11 @@
             background:rgb(230, 231, 150);
             font-size:1.2rem;
             margin:10px;
+            padding:10px;
             width:300px;
             height:40px;
-            font-family:arial black;
+            font-family: 'Quicksand', sans-serif;
+            border-radius:10px;
             border:solid black 2px;
         }
         .btn-container{
@@ -46,6 +48,7 @@
         font-size:0.7rem;
         form{
             input{
+                padding:10px;
                 width:200px;
                 font-size:1rem;
             }

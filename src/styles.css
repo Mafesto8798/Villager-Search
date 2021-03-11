@@ -41,9 +41,11 @@
   background: #e6e796;
   font-size: 1.2rem;
   margin: 10px;
+  padding: 10px;
   width: 300px;
   height: 40px;
-  font-family: arial black;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
   border: solid black 2px;
 }
 
@@ -79,6 +81,7 @@
     font-size: 0.7rem;
   }
   .login-form form input {
+    padding: 10px;
     width: 200px;
     font-size: 1rem;
   }
@@ -197,12 +200,13 @@
 }
 
 .nav-container nav {
-  width: 60%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -228,6 +232,7 @@
   width: 150px;
   height: 50px;
   padding: 15px;
+  margin: 30px;
   font-size: 1.3rem;
 }
 
@@ -270,16 +275,20 @@
             animation: none;
   }
   .nav-container nav {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 100%;
     min-height: 14vh;
   }
   .nav-container nav .nav-links {
-    font-size: 0.7rem;
-    width: 50px;
-    height: 20px;
+    font-size: 1rem;
+    width: 90px;
+    height: 40px;
+  }
+  .nav-container nav .nav-links:hover {
+    background: #216fc7;
+    color: white;
   }
 }
 
@@ -298,14 +307,18 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    min-height: 15vh;
+    min-height: 10vh;
   }
   .nav-container nav .nav-links {
-    margin: 30px;
+    margin: 20px;
     font-size: 0.7rem;
     width: 50px;
-    height: 10px;
+    height: 15px;
   }
 }
 
@@ -330,7 +343,7 @@
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
   width: 500px;
-  height: 500px;
+  height: 550px;
   padding: 20px;
 }
 
@@ -351,15 +364,19 @@
 }
 
 .contact-form form h1 {
+  font-size: 2.4rem;
   color: gold;
+  text-shadow: goldenrod -1px 2px;
 }
 
 .contact-form form #message {
   background: #e6e796;
-  font-family: arial black;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
-  border: black solid 2px;
+  border-radius: 10px;
+  border: solid black 2px;
   resize: none;
+  padding: 10px;
   height: 200px;
   width: 400px;
 }
@@ -367,8 +384,9 @@
 .contact-form form input {
   background: #e6e796;
   font-size: 1rem;
-  border: black solid 2px;
-  font-family: arial black;
+  border-radius: 10px;
+  border: solid black 2px;
+  font-family: 'Quicksand', sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -376,6 +394,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 800px) {
@@ -505,7 +524,6 @@
 }
 
 .createAccount {
-  font-family: arial black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +537,9 @@
 }
 
 .createAccount h1 {
+  font-family: 'Quicksand', sans-serif;
   color: gold;
+  text-shadow: goldenrod -1px 2px;
 }
 
 .createAccount form {
@@ -541,7 +561,7 @@
   border-radius: 50px;
   -webkit-box-shadow: -3px 10px 10px black;
           box-shadow: -3px 10px 10px black;
-  height: 450px;
+  height: 550px;
   width: 500px;
 }
 
@@ -565,11 +585,13 @@
 .createAccount form div input {
   background: #e6e796;
   border: black solid 2px;
+  border-radius: 10px;
   margin: 10px auto;
-  font-family: arial black;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   height: 40px;
   width: 300px;
+  padding: 10px;
 }
 
 .createAccount form section {
@@ -596,11 +618,14 @@
   }
 }
 
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
 body {
   margin: 0;
   background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
   font-size: 80%;
-  font-family: 'Source Sans Pro',sans-serif;
 }
 
 .button {
@@ -616,6 +641,7 @@ body {
   text-align: center;
   background: #216fc7;
   color: white;
+  font-family: 'Quicksand', sans-serif;
   margin: 10px;
   -webkit-box-shadow: -3px 3px 6px black;
           box-shadow: -3px 3px 6px black;
@@ -633,5 +659,12 @@ body {
 
 .links {
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .button:hover {
+    color: #216fc7;
+    color: white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

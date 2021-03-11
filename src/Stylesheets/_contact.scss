@@ -9,11 +9,13 @@
     border-radius:50px;
     box-shadow:-3px 10px 10px black;
     width:500px;
-    height:500px;
+    height:550px;
     padding:20px;
     form{
         h1{
+            font-size:2.4rem;
             color:gold;
+            text-shadow:goldenrod -1px 2px;
         }
         display:flex;
         justify-content: center;
@@ -21,21 +23,25 @@
         flex-direction: column;
     #message{
         background:rgb(230, 231, 150);
-        font-family:arial black;
+        font-family: 'Quicksand', sans-serif;
         font-size:1.2rem;
-        border:black solid 2px;
+        border-radius:10px;
+        border:solid black 2px;
         resize:none;
+        padding:10px;
         height:200px;
         width:400px;
     }
     input{
         background:rgb(230, 231, 150);
         font-size:1rem;
-        border:black solid 2px;
-        font-family:arial black;
+        border-radius:10px;
+        border:solid black 2px;
+        font-family: 'Quicksand', sans-serif;
         justify-content: center;
         align-items: center;
         margin:10px;
+        padding:10px;
     }
 }
 }

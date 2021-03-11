@@ -1,11 +1,12 @@
 .createAccount{
-    font-family:arial black;
     display:flex;
     justify-content: center;
     align-items: center;
     margin:300px auto;
     h1{
+        font-family: 'Quicksand', sans-serif;
         color:gold;
+        text-shadow: goldenrod -1px 2px;
     }
     form{
         font-size:1rem;
@@ -16,7 +17,7 @@
         background:#8f5f29;
         border-radius:50px;
         box-shadow:-3px 10px 10px black;
-        height:450px;
+        height:550px;
         width:500px;
         div{
             margin:25px;
@@ -27,11 +28,13 @@
             input{
                 background:rgb(230, 231, 150);
                 border:black solid 2px;
+                border-radius:10px;
                 margin:10px auto;
-                font-family:arial black;
+                font-family: 'Quicksand', sans-serif;
                 font-size:1.2rem;
                 height:40px;
                 width:300px;
+                padding:10px;
             }
         }
         section{

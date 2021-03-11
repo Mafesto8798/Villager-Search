@@ -4,11 +4,15 @@
 @import './Stylesheets/villagerInfo';
 @import './Stylesheets/signUp';
 
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+
 body{
     margin:0;
     background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
     font-size:80%;
-    font-family: 'Source Sans Pro',sans-serif;
+    
 }
 .button{
     display:flex;
@@ -17,6 +21,7 @@ body{
     text-align: center;
     background:#216fc7;
     color:white;
+    font-family: 'Quicksand', sans-serif;
     margin:10px;
     box-shadow: -3px 3px 6px black;
     border-radius:15px;
@@ -31,4 +36,11 @@ body{
 }
 .links{
     text-decoration: none;
+}
+
+@media (max-width:1200px){
+    .button:hover{
+        color:#216fc7;
+        color:white;
+    }
 }
