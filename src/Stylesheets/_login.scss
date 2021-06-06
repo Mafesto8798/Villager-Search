@@ -3,27 +3,31 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:#8f5f29;
+    background:radial-gradient(#a3edff 30%,#56b8d1 90%);
+    box-shadow: 0px 10px 0px #3aa9ca;
     border-radius:50px;
-    box-shadow:-3px 10px 10px black;
-    padding:30px;
-    width:450px;
-    margin: 250px auto;
+    padding:50px;
+    width:1200px;
+    height:800px;
+    margin: 20vh auto;
     form{
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         input{
-            background:rgb(230, 231, 150);
             font-size:1.2rem;
-            margin:10px;
+            margin:25px;
             padding:10px;
             width:300px;
-            height:40px;
+            height:30px;
+            border:none;
             font-family: 'Quicksand', sans-serif;
             border-radius:10px;
-            border:solid black 2px;
+            box-shadow: 0px 7px 0px #47c1e6;
+            &:focus{
+                outline: none;
+            }
         }
         .btn-container{
             width:100%;
@@ -41,21 +45,69 @@
     height:auto;
 }
 
-@media (max-width:700px){
+@media (max-width:1200px){
     .login-form{
-        margin-top:200px;
-        width:65%;
+        margin-top:30%;
+        width:75%;
         font-size:0.7rem;
         form{
             input{
+                margin:30px;
+                padding:10px;
+                width:250px;
+                height:50px;
+                font-size:1.3rem;
+            }
+        }
+        .logo{
+            margin:40px;
+            width:300px;
+        }
+    }
+}
+
+@media (max-width:800px){
+    .login-form{
+        margin-top:30%;
+        width:75%;
+        height:600px;
+        font-size:0.7rem;
+        form{
+            input{
+                margin:30px;
+                padding:10px;
+                width:250px;
+                height:40px;
+                font-size:1.3rem;
+            }
+        }
+        .logo{
+            margin:40px;
+            width:250px;
+        }
+    }
+}
+@media (max-width:600px){
+    .login-form{
+        margin-top:30%;
+        width:60%;
+        height:425px;
+        font-size:0.7rem;
+        h1{
+            font-size:1.1rem;
+        }
+        form{
+            input{
+                margin:20px;
                 padding:10px;
                 width:200px;
+                height:25px;
                 font-size:1rem;
             }
         }
         .logo{
-            margin:25px;
-            width:200px;
+            margin:40px;
+            width:150px;
         }
     }
 }

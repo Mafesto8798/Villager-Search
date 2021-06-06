@@ -37,7 +37,7 @@ export default function LoginPage() {
                     </Link>
                 </div>
             </form>
-            <h1>Default user: Admin <br />
+            <h1>Default User: Admin <br />
                 Password:12345</h1>
         </div>
     )

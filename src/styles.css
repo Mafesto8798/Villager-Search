@@ -12,13 +12,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #8f5f29;
+  background: radial-gradient(#a3edff 30%, #56b8d1 90%);
+  -webkit-box-shadow: 0px 10px 0px #3aa9ca;
+          box-shadow: 0px 10px 0px #3aa9ca;
   border-radius: 50px;
-  -webkit-box-shadow: -3px 10px 10px black;
-          box-shadow: -3px 10px 10px black;
-  padding: 30px;
-  width: 450px;
-  margin: 250px auto;
+  padding: 50px;
+  width: 1200px;
+  height: 800px;
+  margin: 20vh auto;
 }
 
 .login-form form {
@@ -38,15 +39,20 @@
 }
 
 .login-form form input {
-  background: #e6e796;
   font-size: 1.2rem;
-  margin: 10px;
+  margin: 25px;
   padding: 10px;
   width: 300px;
-  height: 40px;
+  height: 30px;
+  border: none;
   font-family: 'Quicksand', sans-serif;
   border-radius: 10px;
-  border: solid black 2px;
+  -webkit-box-shadow: 0px 7px 0px #47c1e6;
+          box-shadow: 0px 7px 0px #47c1e6;
+}
+
+.login-form form input:focus {
+  outline: none;
 }
 
 .login-form form .btn-container {
@@ -74,20 +80,65 @@
   height: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .login-form {
-    margin-top: 200px;
-    width: 65%;
+    margin-top: 30%;
+    width: 75%;
     font-size: 0.7rem;
   }
   .login-form form input {
+    margin: 30px;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .login-form .logo {
+    margin: 40px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-form {
+    margin-top: 30%;
+    width: 75%;
+    height: 600px;
+    font-size: 0.7rem;
+  }
+  .login-form form input {
+    margin: 30px;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  .login-form .logo {
+    margin: 40px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-form {
+    margin-top: 30%;
+    width: 60%;
+    height: 425px;
+    font-size: 0.7rem;
+  }
+  .login-form h1 {
+    font-size: 1.1rem;
+  }
+  .login-form form input {
+    margin: 20px;
     padding: 10px;
     width: 200px;
+    height: 25px;
     font-size: 1rem;
   }
   .login-form .logo {
-    margin: 25px;
-    width: 200px;
+    margin: 40px;
+    width: 150px;
   }
 }
 
@@ -225,15 +276,15 @@
           align-items: center;
   text-decoration: none;
   background: #216fc7;
+  -webkit-box-shadow: 0px 10px 0px #47c1e6;
+          box-shadow: 0px 10px 0px #47c1e6;
   color: white;
-  -webkit-box-shadow: -3px 5px 8px black;
-          box-shadow: -3px 5px 8px black;
   border-radius: 15px;
   width: 150px;
   height: 50px;
-  padding: 15px;
+  padding: 5px;
   margin: 30px;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .nav-container nav .nav-links:hover {
@@ -283,8 +334,8 @@
   }
   .nav-container nav .nav-links {
     font-size: 1rem;
-    width: 90px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
   }
   .nav-container nav .nav-links:hover {
     background: #216fc7;
@@ -307,47 +358,18 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
     min-height: 10vh;
   }
   .nav-container nav .nav-links {
     margin: 20px;
     font-size: 0.7rem;
-    width: 50px;
-    height: 15px;
+    width: 150px;
+    height: 30px;
   }
 }
 
 .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1rem;
-  margin: 250px auto;
-  background: #8f5f29;
-  border-radius: 50px;
-  -webkit-box-shadow: -3px 10px 10px black;
-          box-shadow: -3px 10px 10px black;
-  width: 500px;
-  height: 550px;
-  padding: 20px;
-}
-
-.contact-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,31 +383,61 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1rem;
+  margin: 20vh auto;
+  background: radial-gradient(#a3edff 30%, #56b8d1 90%);
+  -webkit-box-shadow: 0px 10px 0px #3aa9ca;
+          box-shadow: 0px 10px 0px #3aa9ca;
+  border-radius: 50px;
+  width: 1200px;
+  height: 800px;
+  padding: 50px;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
 }
 
 .contact-form form h1 {
   font-size: 2.4rem;
-  color: gold;
-  text-shadow: goldenrod -1px 2px;
 }
 
 .contact-form form #message {
-  background: #e6e796;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   border-radius: 10px;
-  border: solid black 2px;
+  -webkit-box-shadow: 0px 7px 0px #3aa9ca;
+          box-shadow: 0px 7px 0px #3aa9ca;
+  border: none;
   resize: none;
   padding: 10px;
   height: 200px;
   width: 400px;
 }
 
+.contact-form form #message:focus {
+  outline: none;
+}
+
 .contact-form form input {
-  background: #e6e796;
   font-size: 1rem;
   border-radius: 10px;
-  border: solid black 2px;
+  border: none;
+  -webkit-box-shadow: 0px 7px 0px #3aa9ca;
+          box-shadow: 0px 7px 0px #3aa9ca;
   font-family: 'Quicksand', sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -397,34 +449,103 @@
   padding: 10px;
 }
 
-@media (max-width: 800px) {
+.contact-form form input:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
   .contact-form {
-    margin-top: 190px;
-    width: 80%;
-    height: 500px;
+    margin-top: 30%;
+    width: 75%;
+    height: 800px;
   }
   .contact-form form {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: auto;
   }
   .contact-form form #message {
-    font-size: 1rem;
+    font-size: 1.3rem;
     height: 200px;
-    width: 100%;
+    width: 500px;
   }
   .contact-form form input {
-    width: 100%;
+    padding: 10px;
+    width: 250px;
+    font-size: 1.3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-form {
+    margin-top: 30%;
+    width: 75%;
+    height: 600px;
+  }
+  .contact-form form {
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: auto;
+  }
+  .contact-form form #message {
+    font-size: 1.3rem;
+    height: 200px;
+    width: 500px;
+  }
+  .contact-form form input {
+    margin: 30px;
+    padding: 10px;
+    width: 250px;
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    margin-top: 30%;
+    width: 70%;
+    height: 500px;
+  }
+  .contact-form form {
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: auto;
+  }
+  .contact-form form h1 {
+    font-size: 1.3rem;
+  }
+  .contact-form form #message {
+    font-size: 0.9rem;
+    height: 150px;
+    width: 230px;
+  }
+  .contact-form form input {
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
   }
 }
 
@@ -443,7 +564,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Hind', sans-serif;
-  background: #eee8c2;
+  background: radial-gradient(#a3edff 30%, #56b8d1 90%);
   font-size: 1.5rem;
   border-radius: 25px;
   width: 500px;
@@ -481,6 +602,7 @@
 }
 
 .back-button {
+  font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,12 +615,16 @@
           align-items: center;
   background: #216fc7;
   color: white;
-  -webkit-box-shadow: -5px 3px 5px black;
-          box-shadow: -5px 3px 5px black;
+  -webkit-box-shadow: 0px 7px 0px #47c1e6;
+          box-shadow: 0px 7px 0px #47c1e6;
   border-radius: 15px;
-  width: 50px;
-  padding: 10px;
+  width: 100px;
+  padding: 15px;
   margin: 10px;
+}
+
+.back-button:hover {
+  color: gold;
 }
 
 @media (max-width: 750px) {
@@ -624,7 +750,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url("https://cdn.wallpapersafari.com/41/1/DaSPR5.jpg");
+  background: #235a31;
   font-size: 80%;
 }
 
@@ -640,14 +766,15 @@ body {
           align-items: center;
   text-align: center;
   background: #216fc7;
+  -webkit-box-shadow: 0px 7px 0px #47c1e6;
+          box-shadow: 0px 7px 0px #47c1e6;
   color: white;
   font-family: 'Quicksand', sans-serif;
   margin: 10px;
-  -webkit-box-shadow: -3px 3px 6px black;
-          box-shadow: -3px 3px 6px black;
   border-radius: 15px;
-  width: 80px;
-  height: 45px;
+  border: none;
+  width: 120px;
+  height: 50px;
   padding: 5px;
 }
 
@@ -662,6 +789,35 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .button {
+    font-size: 1.2rem;
+    width: 150px;
+    height: 60px;
+  }
+  .button:hover {
+    color: #216fc7;
+    color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+  }
+  .button:hover {
+    color: #216fc7;
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 0.8rem;
+    width: 125px;
+    height: 40px;
+  }
   .button:hover {
     color: #216fc7;
     color: white;

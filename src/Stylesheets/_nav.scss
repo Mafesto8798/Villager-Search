@@ -81,14 +81,14 @@
             align-items: center;
             text-decoration: none;
             background: #216fc7;
+            box-shadow: 0px 10px 0px #47c1e6;
             color:rgb(255, 255, 255);
-            box-shadow:-3px 5px 8px black;
             border-radius:15px;
             width:150px;
             height:50px;
-            padding:15px;
+            padding:5px;
             margin:30px;
-            font-size:1.3rem;
+            font-size:1rem;
             &:hover{
                 background:#1a62b4;
                 color:gold;
@@ -127,8 +127,8 @@
            min-height:14vh;
            .nav-links{
                font-size:1rem;
-               width:90px;
-               height:40px;
+               width:150px;
+               height:50px;
                &:hover{
                    background:#216fc7;
                    color:white;
@@ -145,17 +145,17 @@
         nav{
             justify-content: space-around;
             align-items: start;
-            flex-direction: column;
             width:100%;
             min-height:10vh;
             .nav-links{
                 margin:20px;
                 font-size:0.7rem;
-                width:50px;
-                height:15px;
+                width:150px;
+                height:30px;
             }
         }
      }
 }
+
 
  

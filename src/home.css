@@ -1,5 +1,4 @@
 .search-bar {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,24 +8,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  top: 75px;
-  left: 50%;
-  right: 50%;
+  margin-top: 10%;
 }
 
 .search-bar input {
+  border: none;
   font-family: 'Quicksand', sans-serif;
-  background: #e6e796;
-  margin: 10px;
   padding: 15px;
-  height: 25px;
+  width: 350px;
+  height: 30px;
   font-size: 1.1rem;
   border-radius: 10px;
 }
 
+.search-bar input:focus {
+  outline: none;
+}
+
 .villager-results {
-  margin-top: 215px;
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,11 +50,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #7dc0d1;
+  background: #8ce2f7;
+  -webkit-box-shadow: 0px 10px 0px #47c1e6;
+          box-shadow: 0px 10px 0px #47c1e6;
   border-radius: 35px;
   width: 250px;
   height: 250px;
   margin: 20px;
+}
+
+.villager-card:hover {
+  background: #47c1e6;
 }
 
 .villager-card section {
@@ -77,22 +83,17 @@
 }
 
 @media (max-width: 1200px) {
-  .searchbar {
-    top: 50px;
+  .search-bar {
+    margin-top: 30%;
   }
-  .searchbar input {
+  .search-bar input {
     height: 30px;
   }
 }
 
 @media (max-width: 800px) {
   .search-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 50px;
-    left: 20%;
-    right: 70%;
+    margin-top: 30%;
   }
   .search-bar input {
     height: 15px;
@@ -109,16 +110,12 @@
 
 @media (max-width: 600px) {
   .search-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 50px;
-    left: 60%;
-    right: 30%;
+    margin-top: 40%;
   }
   .search-bar input {
     font-size: 0.9rem;
     height: 10px;
+    width: 50%;
   }
   .villager-card {
     width: 130px;

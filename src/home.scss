@@ -1,24 +1,23 @@
 .search-bar{
-    position:fixed;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    top:75px;
-    left:50%;
-    right:50%;
+    margin-top: 10%;
     input{
+        border:none;
         font-family: 'Quicksand', sans-serif;
-        background:rgb(230, 231, 150);
-        margin:10px;
         padding:15px;
-        height:25px;
+        width:350px;
+        height:30px;
         font-size:1.1rem;
         border-radius:10px;
+        &:focus{
+            outline:none;
+        }
     }
 }
 .villager-results{
-    margin-top:215px;
+    margin-top:5%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -28,11 +27,15 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background: #7dc0d1;
+    background: #8ce2f7;
+    box-shadow: 0px 10px 0px #47c1e6;
     border-radius: 35px;
     width:250px;
     height:250px;
     margin:20px ;
+    &:hover{
+        background:#47c1e6;
+    }
     section {
         display:flex;
         justify-content: space-around;
@@ -44,19 +47,17 @@
     }
 }
 @media (max-width:1200px){
-    .searchbar{
-        top:50px;
+    .search-bar{
+        margin-top:30%;
         input{
             height:30px;
         }
     }
 }
+
 @media (max-width:800px){
     .search-bar{
-        display:flex;
-        top:50px;
-        left:20%;
-        right:70%;
+        margin-top:30%;
         input{
             height:15px;
         }
@@ -72,13 +73,11 @@
 }
 @media (max-width:600px){
     .search-bar{
-        display:flex;
-        top:50px;
-        left:60%;
-        right:30%;
+        margin-top:40%;
         input{
             font-size:0.9rem;
             height:10px;
+            width:50%;
         }
     }
     .villager-card{

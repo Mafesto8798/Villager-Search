@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Hind', sans-serif;
-    background:rgb(238, 232, 194);
+    background:radial-gradient(#a3edff 30%,#56b8d1 90%);
     font-size:1.5rem;
     border-radius: 25px;
     width:500px;
@@ -35,17 +35,21 @@
     }
 }
 .back-button{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     display:flex;
     justify-content: center;
     align-items: center;
     background: #216fc7;
     color:white;
-    box-shadow:-5px 3px 5px black;
+    box-shadow: 0px 7px 0px #47c1e6;
     border-radius:15px;
-    width:50px;
-    padding:10px;
+    width:100px;
+    padding:15px;
     margin: 10px;
+        &:hover{
+            color:gold;
+    }
 }
 
 @media (max-width:750px){
