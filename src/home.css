@@ -8,16 +8,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10%;
+  margin-top: 30%;
 }
 
 .search-bar input {
   border: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: 15px;
-  width: 350px;
-  height: 30px;
-  font-size: 1.1rem;
+  width: 75%;
+  height: 10px;
+  font-size: 0.8rem;
   border-radius: 10px;
 }
 
@@ -50,17 +50,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #8ce2f7;
-  -webkit-box-shadow: 0px 10px 0px #47c1e6;
-          box-shadow: 0px 10px 0px #47c1e6;
-  border-radius: 35px;
-  width: 250px;
-  height: 250px;
-  margin: 20px;
+  background: #4bad63;
+  -webkit-box-shadow: 0px 1px 10px;
+          box-shadow: 0px 1px 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 20%;
+  margin: 10px;
 }
 
 .villager-card:hover {
-  background: #47c1e6;
+  background: #3e8a51;
 }
 
 .villager-card section {
@@ -76,55 +76,45 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.villager-card .villager-card-img {
   width: 100%;
+  height: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 700px) {
   .search-bar {
-    margin-top: 30%;
-  }
-  .search-bar input {
-    height: 30px;
-  }
-}
-
-@media (max-width: 800px) {
-  .search-bar {
-    margin-top: 30%;
-  }
-  .search-bar input {
-    height: 15px;
-  }
-  .villager-card {
-    width: 150px;
-    height: 150px;
-  }
-  .villager-card .villager-card-img {
-    height: auto;
-    width: 75px;
-  }
-}
-
-@media (max-width: 600px) {
-  .search-bar {
-    margin-top: 40%;
-  }
-  .search-bar input {
-    font-size: 0.9rem;
-    height: 10px;
+    margin: 0 auto;
+    margin-top: 25%;
     width: 50%;
   }
   .villager-card {
-    width: 130px;
-    height: 130px;
-    margin: 15px;
+    width: 20%;
   }
   .villager-card .villager-card-img {
-    height: auto;
-    width: 50px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-bar {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 35%;
+  }
+  .villager-card {
+    margin: 20px;
+    width: 10%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 800px) {
+  .search-bar {
+    margin-top: 10%;
+  }
+  .villager-card {
+    width: 15%;
+  }
+  .villager-card .villager-card-img {
+    height: 60px;
   }
 }
 /*# sourceMappingURL=home.css.map */

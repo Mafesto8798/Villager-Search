@@ -1,161 +1,69 @@
-.nav-container{
-    position:fixed;
-    width:100%;
-    top:0;
-    display:flex;
-    justify-content: center;
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 0px #47c1e6;
+  background: #8ce2f7;
+
+  nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    box-shadow: 0px 15px 0px #47c1e6;
-    background:#8ce2f7;
-
-    .clouds-container{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap:wrap;
-.cloud1{
-    position: fixed;
-    left:350px;
-    height:105px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 10s infinite ease-in ;
-   }
- .little1{
-    position: fixed;
-    left:250px;
-    height:85px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 8.7s infinite ease-in ;
-}
-.cloud2{
-    position: fixed;
-    right:350px;
-    height:130px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 8s infinite ease-in ;
-}
-.little2{
-    position: fixed;
-    right:500px;
-    height:50px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 10.5s infinite ease-in ;
-}
-.cloud3{
-    position: fixed;
-    right:60%;
-    height:90px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 9.2s infinite ease-in ;
-}
-.little3{
-    position: fixed;
-    right:40%;
-    height:70px;
-    opacity:0;
-    z-index: -1;
-    animation: cloud 11.5s infinite ease-in ;
+    height: 10vh;
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background: #216fc7;
+      box-shadow: 0px 5px 0px #47c1e6;
+      color: rgb(255, 255, 255);
+      border-radius: 15px;
+      width: 150px;
+      height: 30px;
+      padding: 5px;
+      margin: 30px;
+      font-size: 0.6rem;
+    }
+  }
 }
 
+@media (min-width: 700px) {
+  .nav-container {
+    nav {
+      .nav-links {
+        width: 100px;
+        margin: 20px;
+        height: 35px;
+      }
     }
-@keyframes cloud{
-    100%{
-        opacity: 0.7;
-        transform:translateX(900px)
-    }
-}
-    nav{
-        width:90%;
-        display:flex;
-        justify-content:flex-end;
-        align-items: center;
-        min-height:15vh;
-        .nav-links{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            background: #216fc7;
-            box-shadow: 0px 10px 0px #47c1e6;
-            color:rgb(255, 255, 255);
-            border-radius:15px;
-            width:150px;
-            height:50px;
-            padding:5px;
-            margin:30px;
-            font-size:1rem;
-            &:hover{
-                background:#1a62b4;
-                color:gold;
-            }
+  }
+
+  @media (min-width: 1200px) {
+    .nav-container {
+      nav {
+        .nav-links {
+          width: 120px;
+          margin: 50px;
+          height: 50px;
         }
+      }
     }
- }
-
- @media (max-width:1200px){
-    .nav-container{
-        .clouds-container{
-            .cloud1{
-               animation:none;
-            }
-            .little1{
-                animation:none;
-            }
-            .cloud2{
-               animation:none;
-            }
-            .little2{
-                animation:none;
-            }
-            .cloud3{
-               animation:none;
-            }
-            .little3{
-                animation:none;
-            }
-        }
-        justify-content: flex-start;
-        align-items: start;
-       nav{
-           justify-content: flex-end;
-           width:100%;
-           min-height:14vh;
-           .nav-links{
-               font-size:1rem;
-               width:150px;
-               height:50px;
-               &:hover{
-                   background:#216fc7;
-                   color:white;
-               }
-           }
-       }
-    }
+  }
 }
 
- @media (max-width:600px){
-     .nav-container{
-         justify-content: flex-start;
-         align-items: start;
-        nav{
-            justify-content: space-around;
-            align-items: start;
-            width:100%;
-            min-height:10vh;
-            .nav-links{
-                margin:20px;
-                font-size:0.7rem;
-                width:150px;
-                height:30px;
-            }
-        }
-     }
+@media (orientation: landscape) and (max-height: 800px) {
+  .nav-container {
+    nav {
+      .nav-links {
+        height: 30px;
+        margin: 20px;
+        width: 80px;
+      }
+    }
+  }
 }
-
-
- 
